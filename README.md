@@ -6,6 +6,12 @@ Submitted by: **Isaac Samuel**
 
 Time spent: **in progress...** hour spent in total
 
+## Submission Checklist
+* [X] Did you successfully push your code to github? Can you see the code on GitHub?
+* [X] Did you add a README which includes a GIF walkthrough of the app's functionality?
+* [X] Did you use our README template for your README?
+* [X] Does your GIF render directly in your README? When using Imgur, you can right-click on the gif and choose "Copy Image Address" to get the correct address. Make sure the address has a .gif extension. If you end up with a url that has a .gifv extension, removing the v and changing this to .gif will ensure the gif renders on GitHub.
+
 ## User Stories
 
 The following **required** functionality is complete:
@@ -27,13 +33,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/pKsfjua.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with [imgur.com]
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+**Additional** features in progress...
 
 ## License
 
