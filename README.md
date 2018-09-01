@@ -4,7 +4,7 @@
 
 Submitted by: **Isaac Samuel**
 
-Time spent: **in progress...** hour spent in total
+Time spent: **2** hours spent in total
 
 ## Submission Checklist
 * [X] Did you successfully push your code to github? Can you see the code on GitHub?
