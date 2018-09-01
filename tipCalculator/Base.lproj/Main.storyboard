@@ -30,6 +30,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="calculatedTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="KvK-h7-mNy"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tips" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xZs-Hh-oui">
                                 <rect key="frame" x="16" y="181" width="67" height="29"/>
@@ -39,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CdC-4f-Hz0">
-                                <rect key="frame" x="252" y="181" width="52" height="29"/>
+                                <rect key="frame" x="207" y="181" width="97" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -53,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0EF-2W-Z5G">
-                                <rect key="frame" x="252" y="310" width="52" height="29"/>
+                                <rect key="frame" x="207" y="310" width="97" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -81,6 +84,12 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="2wH-Kc-SCP"/>
+                    <connections>
+                        <outlet property="billField" destination="scO-8S-2jM" id="lmP-ah-y1p"/>
+                        <outlet property="tipControl" destination="5CI-wI-lSX" id="CIi-Hx-Hyx"/>
+                        <outlet property="tipLabel" destination="CdC-4f-Hz0" id="25h-rY-S3T"/>
+                        <outlet property="totalLabel" destination="0EF-2W-Z5G" id="nnH-G7-buM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Phr-1D-Cqf">
