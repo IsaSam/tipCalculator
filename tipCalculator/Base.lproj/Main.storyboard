@@ -86,7 +86,13 @@
                             <outletCollection property="gestureRecognizers" destination="Phr-1D-Cqf" appends="YES" id="65e-b6-AaJ"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="2wH-Kc-SCP"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="2wH-Kc-SCP">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="IxL-Yt-5aV">
+                            <connections>
+                                <segue destination="ekj-D6-0JR" kind="push" id="WB0-Sn-gh3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="scO-8S-2jM" id="lmP-ah-y1p"/>
                         <outlet property="tipControl" destination="5CI-wI-lSX" id="CIi-Hx-Hyx"/>
@@ -102,6 +108,21 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="605" y="126"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="KTm-Kg-l2r">
+            <objects>
+                <viewController id="ekj-D6-0JR" customClass="SettingsViewController" customModule="tipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TJ8-2q-sLy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qov-83-JIb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Z5-sL-3rW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="126"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GKb-DC-t36">
