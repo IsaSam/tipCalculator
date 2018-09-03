@@ -10,6 +10,16 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var billAmountText: UITextField!
+    @IBOutlet weak var customTipLabel: UILabel!
+    @IBOutlet weak var tipsResultLabel: UILabel!
+    @IBOutlet weak var costResultLabel: UILabel!
+    
+    @IBAction func customTipSlider(_ sender: UISlider) {
+        customTipLabel.text = String(Int(sender.value))
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +32,17 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func calculCustomTip(_ sender: Any) {
+        let customTipPercentage = Double(customTipLabel.text!) ?? 0
+        let customBill = Double(billAmountText.text!) ?? 0
+        let tipsResult = customBill * (customTipPercentage/100)
+        let costResult = customBill + tipsResult
+        
+        tipsResultLabel.text = String(format: "$%.2f", tipsResult)
+        costResultLabel.text = String(format: "$%.2f", costResult)
+        
+    }
+    
     /*
     // MARK: - Navigation
 
