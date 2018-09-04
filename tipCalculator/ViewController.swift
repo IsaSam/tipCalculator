@@ -33,12 +33,18 @@ class ViewController: UIViewController {
     }
     @IBAction func calculatedTip(_ sender: Any) {
         let tipPercentage = [0.18, 0.2, 0.25]
+        
         let bill = Double(billField.text!) ?? 0
         //Saving data
         let defaultsBill = UserDefaults.standard
         defaultsBill.set(bill, forKey: "billKey")
         
         let tip = bill * tipPercentage[tipControl.selectedSegmentIndex]
+        let valueTipControl = tipPercentage[tipControl.selectedSegmentIndex]
+        //Saving data
+        let defaultsValueTipControl = UserDefaults.standard
+        defaultsValueTipControl.set(valueTipControl, forKey: "tipControlKey")
+        
         //Saving data
         let defaultsTip = UserDefaults.standard
         defaultsTip.set(tip, forKey: "tipKey")
