@@ -18,12 +18,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+            billField.text = String(format: "$%.0f", UserDefaults.standard.double(forKey: "billKey"))
+            tipLabel.text = String(format: "$%.2f", UserDefaults.standard.double(forKey: "tipKey"))
+            totalLabel.text = String(format: "$%.2f", UserDefaults.standard.double(forKey: "totKey"))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+ 
     }
 
     @IBAction func onTap(_ sender: Any) {
@@ -32,12 +34,25 @@ class ViewController: UIViewController {
     @IBAction func calculatedTip(_ sender: Any) {
         let tipPercentage = [0.18, 0.2, 0.25]
         let bill = Double(billField.text!) ?? 0
+        //Saving data
+        let defaultsBill = UserDefaults.standard
+        defaultsBill.set(bill, forKey: "billKey")
+        
         let tip = bill * tipPercentage[tipControl.selectedSegmentIndex]
+        //Saving data
+        let defaultsTip = UserDefaults.standard
+        defaultsTip.set(tip, forKey: "tipKey")
+        
         let total = bill + tip
+        //Saving data
+        let defaultsTot = UserDefaults.standard
+        defaultsTot.set(total, forKey: "totKey")
         
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
+        //posting data saved
+        tipLabel.text = String(format: "$%.2f", defaultsTip.double(forKey: "tipKey"))
         
+        //posting data saved
+        totalLabel.text = String(format: "$%.2f", defaultsTot.double(forKey: "totKey"))
     }
     
 }
