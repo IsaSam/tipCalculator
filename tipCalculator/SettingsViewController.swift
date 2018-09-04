@@ -61,6 +61,7 @@ class SettingsViewController: UIViewController {
 
     @IBAction func onClearSettings(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "billKey")
+        billAmountText.text = ""
     }
     
     /*
