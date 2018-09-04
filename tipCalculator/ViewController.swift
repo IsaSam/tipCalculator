@@ -54,6 +54,11 @@ class ViewController: UIViewController {
         //posting data saved
         totalLabel.text = String(format: "$%.2f", defaultsTot.double(forKey: "totKey"))
     }
+    @IBAction func onClear(_ sender: Any) {
+        UserDefaults.standard.removeObject(forKey: "billKey")
+        billField.text = ""
+
+    }
     
 }
 
