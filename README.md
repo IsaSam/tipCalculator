@@ -4,7 +4,7 @@
 
 Submitted by: **Isaac Samuel**
 
-Time spent: **2** hours spent in total
+Time spent: **2** days spent in total
 
 ## Submission Checklist
 * [X] Did you successfully push your code to github? Can you see the code on GitHub?
@@ -21,7 +21,7 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 * [X] Settings page to change the default tip percentage.
 * [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
+* [X] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
